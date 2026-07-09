@@ -1,0 +1,31 @@
+# Allow all standard search engine crawlers
+User-agent: *
+Allow: /
+
+# AI answer engines — allowed so they can cite this site in AI answers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Common Crawl (used mainly for bulk AI training datasets, not live citation) — blocked
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://www.hybridcommercialservices.com.au/sitemap.xml

@@ -1,6 +1,6 @@
 # Hybrid Commercial Services — Website
 
-A simple 4-page static website for a cleaning services business: `index.html` (Home), `services.html`, `about.html`, and `contact.html`, sharing one stylesheet (`style.css`) and one script (`script.js`).
+A simple 4-page static website for a commercial cleaning business: `index.html` (Home), `services.html`, `about.html`, and `contact.html`, sharing one stylesheet (`style.css`) and one script (`script.js`). Also includes `robots.txt` and `sitemap.xml` for search/AI crawler access.
 
 ## 1. How the code is put together
 
@@ -57,6 +57,27 @@ You already have `hybridcommercialservices.com.au` — see the go-live instructi
 2. At your domain registrar, add a CNAME record pointing to `your-username.github.io`.
 3. GitHub will auto-provision a free HTTPS certificate for it within a few minutes to hours.
 
-## 5. Making future edits
+## 5. SEO & AI search (GEO) — what changed
+
+Every page now has: a unique, keyword-targeted `<title>` and meta description (built around "commercial cleaning Melbourne" and related terms), a canonical link, Open Graph + Twitter card tags for social sharing, and `lang="en-AU"`.
+
+**Structured data (JSON-LD):** Every page includes `LocalBusiness` schema (name, service area, hours, price range) so search engines and AI systems can identify the business as a Melbourne commercial cleaner. The homepage also includes `FAQPage` schema matching the visible FAQ section — this is what can earn a rich "People also ask" style result in Google and get pulled directly into AI answers (ChatGPT, Perplexity, Google AI Overviews, etc.).
+
+**Content repositioning:** Since the business is mainly commercial, every page now leads with office/commercial/retail cleaning, with home cleaning kept as a smaller secondary mention rather than the headline service — matching what you told me.
+
+**`robots.txt`:** Explicitly allows the major AI crawlers (GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Google-Extended, Bingbot) so this site is eligible to be cited in AI-generated answers, while blocking CCBot (a bulk AI-training crawler, not a live-citation one).
+
+**`sitemap.xml`:** Lists all 4 pages so search engines can discover and index them.
+
+### Still to do (things I can't do for you)
+
+- **Replace the placeholder phone number** `(555) 123-4567` with your real number — it currently appears in the footer, contact page, and the schema markup in every page's `<head>`. Search each file for `555-123-4567` and `(555) 123-4567`.
+- **Replace the placeholder testimonial** ("Sarah M.") with a real customer quote before this goes live long-term — a fabricated testimonial attributed to a named person is a real legal risk (misleading advertising) if left in place, not just a nitpick.
+- **Set up a free Google Business Profile** at [business.google.com](https://business.google.com) for "Hybrid Commercial Services" in Melbourne. This is the single biggest lever for local search that a website alone can't replicate — it's what actually shows your business on Google Maps and the local pack.
+- **Submit your sitemap to Google Search Console** ([search.google.com/search-console](https://search.google.com/search-console)) once the site is live on your domain, so Google finds and indexes it faster.
+- **Confirm your business hours** (currently set to Mon–Sat 8am–6pm everywhere) are accurate.
+- **Swap the stock photo on the About page** for a real photo of your team or work — genuine photos are both more trustworthy to customers and a positive signal for AI/search systems that increasingly weigh authenticity.
+
+## 6. Making future edits
 
 Any time you want to change text or styling: edit the file locally, then go back to your GitHub repo, open the file, click the pencil (edit) icon, paste in your changes, and commit. GitHub Pages automatically redeploys the site within about a minute of every commit.
