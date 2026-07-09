@@ -71,8 +71,8 @@ Every page now has: a unique, keyword-targeted `<title>` and meta description (b
 
 ### Still to do (things I can't do for you)
 
-- **Replace the placeholder phone number** `(555) 123-4567` with your real number — it currently appears in the footer, contact page, and the schema markup in every page's `<head>`. Search each file for `555-123-4567` and `(555) 123-4567`.
-- **Replace the placeholder testimonial** ("Sarah M.") with a real customer quote before this goes live long-term — a fabricated testimonial attributed to a named person is a real legal risk (misleading advertising) if left in place, not just a nitpick.
+- ~~Replace the placeholder phone number~~ — done, real number `0497 599 698` is now live everywhere.
+- ~~Replace the placeholder testimonial~~ — done, removed until a real one is available.
 - **Set up a free Google Business Profile** at [business.google.com](https://business.google.com) for "Hybrid Commercial Services" in Melbourne. This is the single biggest lever for local search that a website alone can't replicate — it's what actually shows your business on Google Maps and the local pack.
 - **Submit your sitemap to Google Search Console** ([search.google.com/search-console](https://search.google.com/search-console)) once the site is live on your domain, so Google finds and indexes it faster.
 - **Confirm your business hours** (currently set to Mon–Sat 8am–6pm everywhere) are accurate.
