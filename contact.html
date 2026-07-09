@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Hybrid Commercial Services</title>
+  <meta name="description" content="Get a free cleaning quote. Call, email, or send a message and we'll get back to you fast.">
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo"><img src="logo.jpg" alt="Hybrid Commercial Services" class="logo-img"></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-primary">Get a Free Quote</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Get in Touch</h1>
+      <p>Tell us a bit about your space and we'll send a free quote within 24 hours.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-grid">
+
+      <div>
+        <h2 style="margin-bottom:24px;">Send us a message</h2>
+
+        <!--
+          FORM NOTE: GitHub Pages only hosts static files, so this form
+          can't send emails on its own. Sign up free at https://formspree.io,
+          create a form, and replace YOUR_FORM_ID below with the ID they give you.
+          Formspree will then forward every submission straight to your inbox.
+        -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-row">
+            <label for="service">Service Needed</label>
+            <select id="service" name="service">
+              <option>Standard Home Cleaning</option>
+              <option>Recurring Cleaning Plan</option>
+              <option>Office / Commercial Cleaning</option>
+              <option>Deep Cleaning</option>
+              <option>Move-In / Move-Out Cleaning</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label for="message">Tell us about your space</label>
+            <textarea id="message" name="message" rows="4" placeholder="Number of rooms, preferred date, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Request Free Quote</button>
+        </form>
+      </div>
+
+      <div>
+        <h2 style="margin-bottom:24px;">Contact Details</h2>
+
+        <div class="contact-info-item">
+          <h4>Phone</h4>
+          <p>(555) 123-4567</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Email</h4>
+          <p>info@hybridcommercialservices.com.au</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Service Area</h4>
+          <p>Greater metro area — ask us if we cover your suburb.</p>
+        </div>
+        <div class="contact-info-item">
+          <h4>Hours</h4>
+          <p>Monday–Saturday, 8am–6pm</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Hybrid Commercial Services</h4>
+          <p>Reliable home and office cleaning, done right every time.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li>(555) 123-4567</li>
+            <li>info@hybridcommercialservices.com.au</li>
+            <li>Mon–Sat, 8am–6pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Hybrid Commercial Services. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
